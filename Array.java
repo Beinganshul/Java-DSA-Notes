@@ -339,7 +339,7 @@ public class Array {
 
 
 
-
+        //*return new int[]{i, j};   returning an array without declaring its size
         
         
 

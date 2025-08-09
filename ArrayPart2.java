@@ -72,6 +72,22 @@ public class ArrayPart2 {
    }
 
 
+
+   //?FUNCTION FOR MAXIMUM SUBARRAY SUM FOR NEGATIVE NIMBERS ALSO
+
+   
+   public static void kadenesBest(int numbers[]){
+    int maxSum = numbers[0];
+    int currentSum = numbers[0];
+    for(int i=1; i<numbers.length; i++){
+        currentSum = Math.max(numbers[i], currentSum + numbers[i]);
+        maxSum = Math.max(maxSum, currentSum);
+    }
+    System.out.println("Maximum sum is - " + maxSum);
+   }
+
+
+
    //?TRAPPING RAIN WATER WITH WIDTH 1.
 
 
@@ -161,7 +177,6 @@ public class ArrayPart2 {
     // }
 
 
-    // public static void OCCURANCE(int nummbers)
 
 
     public static void main(String args[]){
@@ -200,14 +215,14 @@ public class ArrayPart2 {
         //?BY KADENES ALGORITHM.
 
 
-        System.out.println("Enter the size of the array");
-        int n = dc.nextInt();
-        int numbers[] = new int[n];
-        for(int i=0; i<numbers.length; i++){
-            System.out.println("Enter the number");
-            numbers[i] = dc.nextInt();
-        }
-        kadenes(numbers);
+        // System.out.println("Enter the size of the array");
+        // int n = dc.nextInt();
+        // int numbers[] = new int[n];
+        // for(int i=0; i<numbers.length; i++){
+        //     System.out.println("Enter the number");
+        //     numbers[i] = dc.nextInt();
+        // }
+        // kadenes(numbers);
 
 
         //?TRAPPING RAIN WATER WITH WIDTH 1.
@@ -262,6 +277,21 @@ public class ArrayPart2 {
         //     numbers[i] = dc.nextInt();
         // }
         // findFrequency2(numbers);
+
+
+
+        //?KADANES ALGO BETTER VERSION
+
+
+
+        // System.out.println("Enter the size of the array");
+        // int n = dc.nextInt();
+        // int numbers[] = new int[n];
+        // for(int i=0; i<numbers.length; i++){
+        //     System.out.println("Enter the number");
+        //     numbers[i] = dc.nextInt();
+        // }
+        // kadenesBest(numbers);
 
 
 
