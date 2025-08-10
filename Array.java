@@ -327,24 +327,21 @@ public class Array {
         //?THE INDEX WHERE IT SHOULD BE INSERTED.
 
 
-        int numbers[] = {10,20,30,40,50};
-        System.out.println("Enter the number you want to search");
-        int key = dc.nextInt();
-        int index = binarySearch(numbers, key);
-        if(index < numbers.length && numbers[index] == key){
-            System.out.println("Element found at index " + index);
-        }else{
-            System.out.println("Element not found. It should be inserted at index " + index);
-        }
+        // int numbers[] = {10,20,30,40,50};
+        // System.out.println("Enter the number you want to search");
+        // int key = dc.nextInt();
+        // int index = binarySearch(numbers, key);
+        // if(index < numbers.length && numbers[index] == key){
+        //     System.out.println("Element found at index " + index);
+        // }else{
+        //     System.out.println("Element not found. It should be inserted at index " + index);
+        // }
 
 
 
         //*return new int[]{i, j};   returning an array without declaring its size
         
         
-
-
-
 
 
 

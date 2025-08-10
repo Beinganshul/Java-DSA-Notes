@@ -177,6 +177,23 @@ public class ArrayPart2 {
     // }
 
 
+    
+    //?MAKE A FUNCTION WHICH COUNTS THE APPEARANCE OF AN ELEMENT IF REPEATED
+
+
+     public static boolean appearance(int numbers[]){
+        for(int i=0; i<numbers.length-1; i++){
+            for(int j=i+1; j<numbers.length-1; j++){
+                if(numbers[i] == numbers[j]){
+                    return true;
+                }
+            }
+        }
+        return false;
+     }
+
+
+
 
 
     public static void main(String args[]){
@@ -292,6 +309,23 @@ public class ArrayPart2 {
         //     numbers[i] = dc.nextInt();
         // }
         // kadenesBest(numbers);
+
+
+
+        //?CODE FOR APPEARANCE IN AN ARRAY
+
+
+        
+        // System.out.println("Enter the size of the array");
+        // int n = dc.nextInt();
+        // int numbers[] = new int[n];
+        // for(int i=0; i<numbers.length; i++){
+        //     System.out.println("Enter the number");
+        //     numbers[i] = dc.nextInt();
+        // }
+        // boolean result = appearance(numbers);
+        // System.out.println(result);
+
 
 
 
